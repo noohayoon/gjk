@@ -11,7 +11,7 @@ echo " Time       : ".date('d-m-Y||H:i:s')." \n";
 echo color("green"," =================================== \n");
 
 //	function change(){
-        $nama = nama();
+        $nama = nama();p
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
         echo color("nevy","?] Number : ");
@@ -77,7 +77,7 @@ echo color("green"," =================================== \n");
 						sleep(1);
 					}
 					sleep(3);
-					$boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD022620A"}');
+			
 					$messageboba10 = fetch_value($boba10,'"message":"','"');
 					if(strpos($boba10, 'You can use this promo now...')){
 						echo "\n".color("green","+] Message: ".$messageboba10);
